@@ -1,0 +1,4 @@
+cron:
+- description: "data pull from CloudFlare"
+  url: /watch
+  schedule: every 1 hours

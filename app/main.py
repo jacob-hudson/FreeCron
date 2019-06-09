@@ -1,5 +1,4 @@
-#
-main.py
+#!/usr/bin/env python
 import webapp2
 from google.cloud import pubsub
 class WatchPage(webapp2.RequestHandler):
