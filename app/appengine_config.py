@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # appengine_config.py
 from google.appengine.ext import vendor
 

@@ -1,4 +1,4 @@
 cron:
-- description: "data pull from CloudFlare"
-  url: /watch
-  schedule: every 1 hours
+    - description: "regular job"
+      url: /watch
+      schedule: every 1 hours
