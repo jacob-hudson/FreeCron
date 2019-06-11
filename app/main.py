@@ -11,8 +11,11 @@ class WatchPage(webapp2.RequestHandler):
         message_id = topic.publish('ping'.encode('utf-8'))
         self.response.write(message_id)
 
-
+class MainPage(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/plain'
+        self.response.write('This is a landing page for the FreeCon cloud scheduler for GCP!')
 
 app = webapp2.WSGIApplication([
-    ('/watch', WatchPage),
+    ('/', MainPage), ('/watch', WatchPage),
 ], debug=True)
